@@ -2,7 +2,11 @@
 
 ## Demo 🔍
 
-https://github.com/Akash52/msal-with-nuxt3/assets/31063892/82a928a7-5545-4cbf-8adc-f30ba09e0fee
+
+
+https://github.com/Akash52/msal-with-nuxt3/assets/31063892/77e1351c-df21-4a91-bdd1-7cc53c387d81
+
+
 
 ## Features ✨
 
