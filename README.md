@@ -41,7 +41,7 @@ $ yarn add @azure/msal-browser
 
 ```
 CLIENT_ID=b8ec46f5-
-AUTHORITY=https://login.microsoftonline.com/
+AUTHORITY=https://login.microsoftonline.com/${your_tenat_id}
 REDIRECT_URI=http://localhost:3000
 POST_LOGOUT_REDIRECT_URI=http://localhost:3000
 ```
