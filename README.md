@@ -75,6 +75,20 @@ REDIRECT_URI=http://localhost:3000
 POSTLOGOUT_REDIRECT_URI=http://localhost:3000
 ```
 
+### After Configureing ENV
+
+#### Our Final step 
+
+
+Install dependencies
+```
+npm install
+````
+Run development server
+```
+npm run dev
+````
+
 #### Official documentation guide for Register an application with the Microsoft identity platform
 
 - [https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app](https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app)
