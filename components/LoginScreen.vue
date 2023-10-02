@@ -25,7 +25,7 @@
                 <div class="relative px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl py-32 sm:py-40 lg:py-41">
                         <div class="text-center flex flex-col justify-center items-center">
-                            <img src="/assets/Microsoft_logo.svg.png"
+                            <img src="https://i.ibb.co/y6ZvhjC/Microsoft-logo-svg.png"
                                 class="h-24 w-24  ring-4 ring-blue-200 sm:h-32 sm:w-32 oject-cover hover:opacity-75 transition-all duration-300" />
                             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" />
                             <div class="mt-10 flex items-center justify-center gap-x-6">
