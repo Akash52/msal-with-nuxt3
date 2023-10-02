@@ -50,7 +50,7 @@ $ yarn add @azure/msal-browser
 ![02](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/b12cb01b-2b12-401b-a45b-c6890c265373)
 
 4. Register redirect URL
-https://yourapplication.com/api or for development http://localhost:3000/
+https://yourapplication.com/ or for development http://localhost:3000/
 
 Step 1 :
 ![04](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/5cb69b77-8a69-4125-ba4a-8d466deff058)
