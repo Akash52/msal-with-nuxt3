@@ -66,6 +66,8 @@ Step 3 :
 ![IMG_2497](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/7dbea54b-db0f-44e9-b774-c87e87121301)
 
 
+##### Refer to the image above to set the values for CLIENT and Tenet ID in the following ENV.
+
 ```
 CLIENTID=
 AUTHORITY=https://login.microsoftonline.com
