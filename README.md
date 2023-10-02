@@ -82,7 +82,7 @@ POST_LOGOUT_REDIRECT_URI=http://localhost:3000
 - [https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app](https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app)
 
 
-### Project Tree for Repo
+### Repo Tree
 
 ```
 📦 
