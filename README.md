@@ -42,7 +42,8 @@ $ yarn add @azure/msal-browser
 1. Go to https://portal.azure.com/
 2. Search for Azure Active Directory in your organization and select `App Registrations` from the left panel and click on `New registration`.
 
-![01](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/68b22716-135b-43e3-b7f2-572681181760)
+![IMG_2493](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/8d6de419-63d1-4453-8a1f-61bedf8c719d)
+
 
    
 3. Register the application by giving your name, selecting supported account types (who can use this application) based on requirements, and clicking register.
