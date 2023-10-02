@@ -67,10 +67,10 @@ Step 3 :
 
 
 ```
-CLIENT_ID=
-AUTHORITY=https://login.microsoftonline.com/${your_tenat_id}
+CLIENTID=
+AUTHORITY=https://login.microsoftonline.com
 REDIRECT_URI=http://localhost:3000
-POST_LOGOUT_REDIRECT_URI=http://localhost:3000
+POSTLOGOUT_REDIRECT_URI=http://localhost:3000
 ```
 
 #### Official documentation guide for Register an application with the Microsoft identity platform
