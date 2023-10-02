@@ -33,10 +33,6 @@ $ yarn add @azure/msal-browser
 
 ## Usage 🌟
 
-
-
-#### Set up your environment variables by creating a `.env` file in the root directory of your project. Add the following variables:
-
 ### Register the app on the Azure portal
 
 1. Go to https://portal.azure.com/
