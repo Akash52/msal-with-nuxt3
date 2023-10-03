@@ -75,15 +75,10 @@ REDIRECT_URI=http://localhost:3000
 POSTLOGOUT_REDIRECT_URI=http://localhost:3000
 ```
 
-### After Configureing ENV
+### After Configure ENV
 
 #### Our Final step 
 
-
-Install dependencies
-```
-npm install
-````
 Run development server
 ```
 npm run dev
