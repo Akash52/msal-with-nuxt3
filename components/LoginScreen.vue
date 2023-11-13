@@ -60,10 +60,12 @@
 </template>
   
 <script setup>
-const { $msal } = useNuxtApp();
+import {useMSAuth} from "~/composables/useMSAuth";
+
+const msAuth = useMSAuth();
 
 async function login() {
-    await $msal().signIn();
+    await msAuth.signIn()
 }
 </script>
   

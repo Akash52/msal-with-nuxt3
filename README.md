@@ -60,7 +60,7 @@ Step 3 :
 
 ![05](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/9bc3b61e-6b0e-48af-9702-42055fe0e0ad)
 
-5. Copy the app's essential info, create .env.local a file at the root of your project and set the value of the below .env variables.
+5. Copy the app's essential info, create an `.env` file at the root of your project and set the value of the below .env variables.
 
 
 ![IMG_2497](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/7dbea54b-db0f-44e9-b774-c87e87121301)
@@ -107,7 +107,7 @@ npm run dev
 ├─ layouts
 │  └─ default.vue
 ├─ middleware
-│  └─ auth.ts  // Authentication middleware
+│  └─ auth.global.ts  // Authentication middleware
 ├─ nuxt.config.ts
 ├─ package-lock.json
 ├─ package.json
@@ -119,7 +119,7 @@ npm run dev
 ├─ public
 │  └─ favicon.ico
 ├─ stores
-│  └─ auth.ts
+│  └─ auth.global.ts
 ├─ tailwind.config.js
 └─ tsconfig.json
 ```

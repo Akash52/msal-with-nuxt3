@@ -8,16 +8,16 @@
             </div>
             <div class="justify-center items-center flex mx-auto text-gray-600 font-semibold  w-32 h-32 rounded-full bg-blue-200 uppercase :hover:bg-gray-300"
                 v-else>
-                {{ user?.name?.match(/[A-Z]/g).join("") }}
+                {{ userStore.user.name?.match(/[A-Z]/g).join("") }}
             </div>
 
-            <h3 class="mt-6 text-gray-900 text-sm font-medium">{{ user?.name }}</h3>
+            <h3 class="mt-6 text-gray-900 text-sm font-medium">{{ userStore.user.name }}</h3>
             <dl class="mt-1 flex-grow flex flex-col justify-between">
                 <dt class="sr-only">Name</dt>
-                <dd class="text-gray-500 text-sm">{{ user?.username }}</dd>
+                <dd class="text-gray-500 text-sm">{{ userStore.user.username }}</dd>
                 <dt class="sr-only">Email</dt>
             </dl>
-            <button @click="logout(user.homeAccountId)"
+            <button @click="logout(userStore.user.homeAccountId)"
                 class="absolute bottom-0 right-0 mr-2 mb-2 bg-gray-100 p-2 rounded-lg shadow hover:bg-red-500 text-gray-500 hover:text-white hover:opacity-60 transition-all duration-500 font-extrabold font-mono">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -43,27 +43,25 @@
     </div>
 </template>
 <script setup>
-import { useUserStore } from "../stores/auth";
-import { storeToRefs } from "pinia";
+import {useMSAuth} from "~/composables/useMSAuth";
+import {useAppUser} from "~/composables/useAppUser";
 
-const userStore = useUserStore();
-const { user, userRole } = storeToRefs(userStore);
-const { $msal } = useNuxtApp();
-const isAuthenticated = $msal().isAuthenticated();
-
+const userStore = useAppUser();
+const msAuth = useMSAuth();
+const isAuthenticated = msAuth.isAuthenticated();
 
 const profileImage = ref("");
 
 async function logout(accountId) {
     if (accountId) {
-        await $msal().signOut(accountId);
+        await msAuth.signOut(accountId);
     } else {
         console.log("No account id");
     }
 }
 
 const getProfileImage = async () => {
-    const accessToken = await $msal().acquireTokenSilent({
+    const accessToken = await msAuth.acquireTokenSilent({
         scopes: ["User.Read"],
     });
     const response = await fetch(
@@ -84,9 +82,7 @@ const getProfileImage = async () => {
 onMounted(async () => {
     if (isAuthenticated) {
         profileImage.value = await getProfileImage();
-        userStore.$patch((state) => {
-            state.userImage = profileImage;
-        });
+        userStore.value.userImage = profileImage.value;
     }
 });
 
