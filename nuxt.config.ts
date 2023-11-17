@@ -4,15 +4,8 @@ export default defineNuxtConfig({
 
   plugins: [{ src: "~/plugins/msal.ts", mode: "client" }],
 
-  modules: ["@pinia/nuxt", "nuxt-headlessui"],
+  modules: ["nuxt-headlessui"],
   css: ["~/assets/css/main.css"],
-
-  imports: {
-    dirs: ["./stores"],
-  },
-  pinia: {
-    autoImports: ["defineStore", "acceptHMRUpdate"],
-  },
 
   runtimeConfig: {
     public: {
